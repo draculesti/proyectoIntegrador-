@@ -1,6 +1,5 @@
 :root {
-    --color-secondary: #577d86; /* Menús y footer */
-    --color-background: #1b4332; /* Fondo */
+    --color-background: #1b4332; 
     --font-roboto: 'Roboto', sans-serif;
     --font-italianno: 'Italianno', cursive;
 }

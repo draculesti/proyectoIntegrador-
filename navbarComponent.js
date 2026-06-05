@@ -4,7 +4,7 @@ const navbar = `
     <div class="container-fluid">
       <a class="navbar-brand fw-bold" href="#">
         <div class="logo">
-          <img src="./img/logo.png" alt="Mixtecatl Logo">
+          <img src="./assets/logo.png" alt="Mixtecatl_Logo">
         </div>
       </a>
       <button

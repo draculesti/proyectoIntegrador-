@@ -1,5 +1,4 @@
-# Vacio
-# Rapiditos Food 🍔🍟
+# Mixtecatl 🍔🍟
 
 Rapiditos Food es una aplicación web básica de comercio electrónico centrada en pedidos de comida rápida.
 El proyecto permite a los usuarios explorar productos, ver los platos y simular una experiencia de pedido en línea.

@@ -1,3 +1,4 @@
+# Vacio
 # Rapiditos Food 🍔🍟
 
 Rapiditos Food es una aplicación web básica de comercio electrónico centrada en pedidos de comida rápida.

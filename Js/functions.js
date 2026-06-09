@@ -1,5 +1,5 @@
 const nombre = document.getElementById("nombreInput");
-const correo = document.getElementById("correoInput");
+const correo = document.getElementById("emailInput");
 const telefono = document.getElementById("telInput");
 const mensaje = document.getElementById("mensajeInput");
 
@@ -28,12 +28,52 @@ formButton.addEventListener("click", (e)=>{
 
     e.preventDefault();
     //Validar nombre
-    if(nombre.value.length==0 || !(expName.test(nombre)) || correo.value.length==0 || !(expEmail.test(correo) || mensaje.value.length==0)){
+    if(
+    nombre.value.length === 0 ||
+    !expName.test(nombre.value) ||
+    correo.value.length === 0 ||
+    !expEmail.test(correo.value) ||
+    mensaje.value.length === 0
+    ){
         appendAlert('Uno o más datos erroneos, revise su información.', 'warning');
     } 
     else{
-        appendAlert('Datos válidos. Su mensaje ha sido enviado', 'success');
-        //AÑADIR LA FUNCIÓN DEL CORREO
+        //FUNCIÓN DEL CORREO
+        const templateParams = {
+            nombre: nombre.value,
+            correo: correo.value,
+            telefono: telefono.value,
+            mensaje: mensaje.value
+        };
+
+        emailjs.send(
+            "service_bk7k02h",
+            "template_yqhzg5v",
+            templateParams
+        )
+        .then(() => {
+
+            appendAlert(
+                'Datos válidos. Su mensaje ha sido enviado',
+                'success'
+            );
+
+            nombre.value = "";
+            correo.value = "";
+            telefono.value = "";
+            mensaje.value = "";
+
+        })
+        .catch((error) => {
+
+            appendAlert(
+                'Error al enviar el correo',
+                'danger'
+            );
+
+            console.error(error);
+
+        });
     }
     
 });

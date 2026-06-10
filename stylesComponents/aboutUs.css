@@ -1,0 +1,155 @@
+@import url('./footer.css'); 
+
+:root {
+  --color-background: #1b4332;
+  --font-roboto: 'Roboto', sans-serif;
+  --font-italianno: 'Italianno', cursive;
+}
+
+body {
+  background-color: var(--color-background);
+  font-family: var(--font-roboto);
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Navbar classes */
+
+.navbarCustom {
+  background-color: #43aa8b;
+  border-radius: 20px;
+  padding: 15px 30px;
+}
+
+.logo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.custom-btn {
+  border: none;
+  color: white;
+  font-size: 18px;
+}
+
+.custom-btn:hover {
+  color: #1c2a2a;
+}
+
+.cart-badge {
+  background-color: #1c2a2a;
+}
+
+/* Hamburger button */
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Make icon white */
+
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Mobile menu */
+@media (max-width: 991.98px) {
+  .nav-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .custom-btn {
+    width: 100%;
+    text-align: left;
+    padding: 10px 15px;
+  }
+}
+
+/* End navbar Clases */
+
+.about-section {
+  padding: 80px 0;
+}
+
+.titulo {
+  font-family: var(--font-italianno);
+  font-size: 64px;
+  color: #ffffff;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.texto {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.imagen {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+  border: 3px solid var(--color-secondary);
+}
+
+/* ajustes responsivos */
+@media (max-width: 992px) {
+  .titulo {
+    font-size: 48px;
+  }
+
+  .texto {
+    text-align: center;
+  }
+
+  .imagen {
+    max-width: 280px;
+  }
+}
+
+/* Cards Team */
+
+.formatoTarjetas {
+  background-color: #1b4332;
+  color: white;
+  border: #1b4332;
+}
+
+.textUnderline:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.formatoLogotipos {
+  color: #43aa8b;
+  font-size: 20px;
+}
+
+.formatoLogotipos:hover {
+  color: #7ae3c2;
+  font-size: 23px;
+}
+
+.animacionImg {
+  transition: all 0.4s ease;
+  margin: auto;
+}
+
+.animacionImg:hover {
+  box-shadow: 0 0 20px rgba(120, 255, 220, .6);
+  margin: auto;
+}

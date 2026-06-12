@@ -7,7 +7,7 @@ const formButton = document.getElementById("formButton");
 const seccionAlerta = document.getElementById("alertaSitio");
 
 //Para validar nombre y email
-const expName = /^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ]+$/;
+const expName = /^[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]+$/;
 const expEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 
 //Para añadir la alerta

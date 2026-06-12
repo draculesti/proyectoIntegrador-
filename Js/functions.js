@@ -48,7 +48,7 @@ formButton.addEventListener("click", (e)=>{
 
         emailjs.send(
             "service_bk7k02h",
-            "template_yqhzg5v",
+            "template_sgnb35o",
             templateParams
         )
         .then(() => {
